@@ -1,5 +1,8 @@
-# Vue 3 + Vite
+# Frontend
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue + Vite + Three.js 前端。开发时请求 `/api`，由 [vite.config.js](/Users/wangyiqiu/Desktop/programe/3D/frontend/vite.config.js) 代理到 FastAPI 后端 `http://localhost:8000`。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+```bash
+pnpm install
+pnpm dev
+```
