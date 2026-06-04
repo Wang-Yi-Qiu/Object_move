@@ -1,5 +1,8 @@
 # Dependencies
 node_modules/
+.venv/
+__pycache__/
+*.py[cod]
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
@@ -38,3 +41,6 @@ yarn-error.log*
 # OS files
 Thumbs.db
 .DS_Store
+
+#self
+.gitignore
