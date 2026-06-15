@@ -2,7 +2,7 @@
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display",
     "Segoe UI", sans-serif;
-  color: #182331;
+  color: #101b29;
   background: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -49,10 +49,9 @@ a {
   overflow: hidden;
   padding: 24px clamp(18px, 4vw, 56px) 42px;
   background:
-    linear-gradient(180deg, rgba(181, 223, 255, 0.72) 0%, rgba(235, 247, 255, 0.78) 38%, #ffffff 78%),
-    radial-gradient(circle at 72% 8%, rgba(255, 255, 255, 0.94), transparent 32%),
+    linear-gradient(180deg, rgba(171, 215, 248, 0.88) 0%, rgba(230, 242, 252, 0.92) 40%, #fbfdff 82%),
+    radial-gradient(circle at 72% 8%, rgba(255, 255, 255, 0.88), transparent 32%),
     #ffffff;
-  animation: page-enter 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .app-shell::before {
@@ -130,13 +129,13 @@ a {
   max-width: 1240px;
   margin: 0 auto;
   padding: 10px 12px 10px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.46);
+  background: rgba(255, 255, 255, 0.58);
   backdrop-filter: blur(22px) saturate(142%);
   box-shadow:
-    0 18px 50px rgba(88, 121, 152, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+    0 18px 50px rgba(64, 97, 126, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
 }
 
 .brand,
@@ -248,6 +247,7 @@ a {
   align-items: end;
   max-width: 1240px;
   margin: clamp(58px, 8vw, 104px) auto 34px;
+  animation: section-enter 700ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-copy {
@@ -257,7 +257,7 @@ a {
 .system-line,
 .eyebrow {
   margin: 0;
-  color: rgba(49, 77, 104, 0.62);
+  color: rgba(31, 55, 78, 0.72);
   font-size: 12px;
   font-weight: 760;
   letter-spacing: 0.08em;
@@ -267,7 +267,7 @@ a {
 h1,
 h2 {
   margin: 0;
-  color: #101823;
+  color: #09131f;
   letter-spacing: 0;
 }
 
@@ -282,7 +282,7 @@ h1 {
 .intro {
   max-width: 600px;
   margin: 22px 0 0;
-  color: rgba(24, 35, 49, 0.62);
+  color: rgba(16, 27, 41, 0.7);
   font-size: clamp(17px, 1.7vw, 21px);
   font-weight: 460;
   line-height: 1.72;
@@ -328,9 +328,9 @@ h1 {
 }
 
 .secondary-action {
-  border: 1px solid rgba(90, 125, 155, 0.14);
-  color: #253548;
-  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid rgba(90, 125, 155, 0.18);
+  color: #213244;
+  background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(14px);
 }
 
@@ -368,12 +368,12 @@ h1 {
 .side-panel,
 .viewer-status,
 .cube-item {
-  border: 1px solid rgba(255, 255, 255, 0.68);
-  background: rgba(255, 255, 255, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(24px) saturate(146%);
   box-shadow:
-    0 22px 58px rgba(74, 108, 139, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+    0 22px 58px rgba(64, 97, 126, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
 }
 
 .metric-card {
@@ -384,7 +384,7 @@ h1 {
 
 .metric-card span {
   display: block;
-  color: rgba(24, 35, 49, 0.52);
+  color: rgba(16, 27, 41, 0.56);
   font-size: 12px;
   font-weight: 720;
   letter-spacing: 0.04em;
@@ -394,7 +394,7 @@ h1 {
 .metric-card strong {
   display: block;
   margin-top: 16px;
-  color: #101823;
+  color: #0d1724;
   font-size: clamp(24px, 3vw, 34px);
   line-height: 1;
 }
@@ -405,20 +405,25 @@ h1 {
   gap: 18px;
   max-width: 1240px;
   margin: 0 auto;
+  animation: section-enter 820ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .viewer-panel {
   position: relative;
   min-height: 640px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.82);
   border-radius: 34px;
   background:
-    radial-gradient(circle at 58% 16%, rgba(255, 255, 255, 0.72), transparent 36%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(244, 249, 253, 0.72));
+    radial-gradient(circle at 58% 16%, rgba(255, 255, 255, 0.7), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(233, 242, 248, 0.94));
   box-shadow:
-    0 28px 80px rgba(72, 111, 147, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    0 30px 80px rgba(64, 97, 126, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+}
+
+.viewer-surface {
+  position: relative;
 }
 
 .viewer-panel::before {
@@ -426,7 +431,7 @@ h1 {
   inset: 18px;
   pointer-events: none;
   content: "";
-  border: 1px solid rgba(88, 118, 145, 0.08);
+  border: 1px solid rgba(88, 118, 145, 0.12);
   border-radius: 24px;
 }
 
@@ -435,6 +440,22 @@ h1 {
   width: 100%;
   height: 640px;
   cursor: grab;
+}
+
+.viewer-loading {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  z-index: 2;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  color: rgba(16, 27, 41, 0.76);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 16px 34px rgba(74, 108, 139, 0.1);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .viewer-canvas:active {
@@ -451,7 +472,7 @@ h1 {
   align-items: center;
   padding: 10px 13px;
   border-radius: 999px;
-  color: rgba(24, 35, 49, 0.68);
+  color: rgba(16, 27, 41, 0.72);
   font-size: 12px;
   font-weight: 680;
 }
@@ -476,6 +497,9 @@ h1 {
   min-height: 640px;
   padding: 24px;
   border-radius: 34px;
+  box-shadow:
+    0 26px 64px rgba(64, 97, 126, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
 }
 
 .panel-heading {
@@ -497,7 +521,7 @@ h2 {
 .cube-form label {
   display: grid;
   gap: 8px;
-  color: rgba(24, 35, 49, 0.58);
+  color: rgba(16, 27, 41, 0.64);
   font-size: 12px;
   font-weight: 720;
   letter-spacing: 0.02em;
@@ -506,10 +530,10 @@ h2 {
 .cube-form input {
   width: 100%;
   min-height: 46px;
-  border: 1px solid rgba(71, 106, 136, 0.12);
+  border: 1px solid rgba(71, 106, 136, 0.18);
   border-radius: 16px;
-  color: #162232;
-  background: rgba(255, 255, 255, 0.62);
+  color: #142131;
+  background: rgba(255, 255, 255, 0.82);
   padding: 9px 13px;
   outline: 0;
   box-shadow:
@@ -523,7 +547,7 @@ h2 {
 
 .cube-form input:focus {
   border-color: rgba(93, 129, 160, 0.32);
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.92);
   box-shadow:
     0 0 0 4px rgba(154, 199, 234, 0.18),
     inset 0 1px 0 rgba(255, 255, 255, 0.92);
@@ -536,6 +560,46 @@ h2 {
 .cube-form button {
   width: 100%;
   margin-top: 4px;
+}
+
+.cube-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+  transform: none;
+  box-shadow: none;
+}
+
+.panel-summary {
+  display: grid;
+  gap: 6px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.74);
+  backdrop-filter: blur(18px) saturate(146%);
+  box-shadow:
+    0 18px 44px rgba(74, 108, 139, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+}
+
+.panel-summary span {
+  color: rgba(16, 27, 41, 0.56);
+  font-size: 12px;
+  font-weight: 720;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.panel-summary strong {
+  color: #0d1724;
+  font-size: 18px;
+  font-weight: 760;
+}
+
+.panel-summary small {
+  color: rgba(16, 27, 41, 0.58);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .notice {
@@ -604,7 +668,7 @@ h2 {
 
 .cube-item strong {
   overflow: hidden;
-  color: #172231;
+  color: #101b29;
   font-size: 14px;
   line-height: 1.25;
   text-overflow: ellipsis;
@@ -613,19 +677,17 @@ h2 {
 
 .cube-item small {
   margin-top: 5px;
-  color: rgba(24, 35, 49, 0.48);
+  color: rgba(16, 27, 41, 0.52);
   font-size: 12px;
   line-height: 1.45;
 }
 
-@keyframes page-enter {
+@keyframes section-enter {
   from {
-    opacity: 0;
     transform: translateY(10px);
   }
 
   to {
-    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -690,7 +752,8 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(42px, 14vw, 64px);
+    font-size: clamp(34px, 11vw, 52px);
+    line-height: 0.98;
   }
 
   .metric-strip {
